@@ -116,6 +116,11 @@ class Solution {
 }
 ```
 
+```
+prereqMap.get(neighbour).addAll(prereqMap.getOrDefault(node,new HashSet<>())); //addAll
+ans.add(prereqMap.getOrDefault(des,new HashSet<>()).contains(src)); //true,false through contains..
+```
+
 
 
      
